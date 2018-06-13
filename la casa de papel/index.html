@@ -23,118 +23,159 @@
 
 		.d {
 			color: black;
+			font-size: 1px;
+		}
+
+		.t {
+			margin: 0px 100px;
+		}
+
+		.c {
+			margin: 20px 0px 20px 0px;
 		}
   	</style>
+
+  	
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<style>
+	  /* Make the image fully responsive */
+	  .carousel-inner img {
+	      width: 100%;
+	      height: 100%;
+	}
+	</style>
 
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#"> <i class="fa fa-money fa-lg" aria-hidden="true"></i> LA CASA DE PAPEL</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+	  	<a class="navbar-brand" href="#"> <i class="fa fa-money fa-lg" aria-hidden="true"></i> LA CASA DE PAPEL</a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+	    	<span class="navbar-toggler-icon"></span>
+	  </button>
 
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Episódios</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Por trás das câmeras</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
-    </form>
-  </div>
-</nav>
+	  <div class="collapse navbar-collapse" id="navbarColor01">
+	  	<ul class="navbar-nav mr-auto">
+	    	<li class="nav-item active">
+	        	<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      	</li>
+	      	<li class="nav-item">
+	        	<a class="nav-link" href="#">Episódios</a>
+	      	</li>
+	      	<li class="nav-item">
+	        	<a class="nav-link" href="#">Por trás das câmeras</a>
+	      	</li>
+	   	</ul>
+	    <form class="form-inline my-2 my-lg-0">
+	    	<input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
+	      	<button class="btn btn-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
+	   	</form>
+	  	</div>
+	</nav>
 
-<center>
-	<div id="demo" class="carousel slide" data-ride="carousel">
+	<div class="t">
+		<div id="demo" class="carousel slide c" data-ride="carousel">
 
-	  <!-- Indicators -->
-	  <ul class="carousel-indicators">
-	    <li data-target="#demo" data-slide-to="0" class="active"></li>
-	    <li data-target="#demo" data-slide-to="1"></li>
-	    <li data-target="#demo" data-slide-to="2"></li>
-	  </ul>
+			<!-- Indicators -->
+		  	<ul class="carousel-indicators">
+		    	<li data-target="#demo" data-slide-to="0" class="active"></li>
+		    	<li data-target="#demo" data-slide-to="1"></li>
+		    	<li data-target="#demo" data-slide-to="2"></li>
+		  	</ul>
+		  
+		  	<!-- The slideshow -->
+		  	<div class="carousel-inner">
+		    	<div class="carousel-item active">
+		      		<img src="img/1.jpg" alt="Los Angeles" width="1280" height="720">
+		    	</div>
+		   		<div class="carousel-item">
+		      		<img src="img/2.jpg" alt="Chicago" width="1280" height="720">
+		    	</div>
+		    	<div class="carousel-item">
+		      		<img src="img/3.jpg" alt="New York" width="1280" height="720">
+		    	</div>
+		  	</div>
+		  
+		 	<!-- Left and right controls -->
+		  	<a class="carousel-control-prev" href="#demo" data-slide="prev">
+		    	<span class="carousel-control-prev-icon"></span>
+		  	</a>
+		  	<a class="carousel-control-next" href="#demo" data-slide="next">
+		    	<span class="carousel-control-next-icon"></span>
+		 	 </a>
+		</div>
 
-	  <!-- The slideshow -->
-	  <div class="carousel-inner">
-	    <div class="carousel-item active">
-	      <img src="img/1.jpg" alt="Los Angeles">
-	    </div>
-	    <div class="carousel-item">
-	      <img src="img/2.jpg" alt="Chicago">
-	    </div>
-	    <div class="carousel-item">
-	      <img src="img/3.jpg" alt="New York">
-	    </div>
-	  </div>
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+		    	<a class="nav-link active show" data-toggle="tab" href="#historia">História</a>
+		  	</li>
+		  	<li class="nav-item">
+		    	<a class="nav-link" data-toggle="tab" href="#personagens">Personagens</a>
+		  	</li>
+		</ul>
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade active show" id="historia">
+				<p class="d">===</p>
+		    	<p><b>La Casa de Papel</b> é uma série de televisão espanhola do gênero de filmes de assalto. Criada por Álex Pina para a rede televisiva espanhola Antena 3, a série estreou em 2 de maio de 2017 estrelando Úrsula Corberó (Tókyo), Alba Flores (Nairóbi), Álvaro Morte (El Profesor), Itziar Ituño (Raquel Murillo), Pedro Alonso (Berlin), Paco Tous (Moscou), Jaime Lorente (Denver), Miguel Herrán (Rio), Darko Peric (Helsinque) e Roberto García (Oslo). A série foi adicionada internacionalmente no catálogo da Netflix no dia 25 de dezembro de 2017 com uma nova edição e diferente quantidade de episódios.
 
-	  <!-- Left and right controls -->
-	  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-	    <span class="carousel-control-prev-icon"></span>
-	  </a>
-	  <a class="carousel-control-next" href="#demo" data-slide="next">
-	    <span class="carousel-control-next-icon"></span>
-	  </a>
+				Um homem misterioso que atende pelo nome de El Profesor ("Professor"), está planejando o maior assalto do século. A fim de realizar o ambicioso plano ele recruta oito pessoas com certas habilidades e que não têm nada a perder. O objetivo é se infiltrar na Casa da Moeda, de modo que eles possam imprimir 2,4 bilhões de euros. Para fazer isso eles precisam de onze dias de reclusão, durante os quais vão ter que lidar com sessenta e sete reféns e as forças da Polícia de elite, com cenas de muita ação e planos brilhantes de El Profesor, que acaba se apaixonando pela policial que está encarregada no caso do assalto a casa da moeda.</p>
+		  	</div>
+		  	<div class="tab-pane fade" id="personagens">
+	  			<p class="d">===</p>
+		    	<h2>PROFESSOR</h2>
+		    	<img src="img/p.jpg"/>
+		    	<p class="d">===</p>
+		    	<p><b>Nome real:</b> Sergio Marquina</p>
+
+				<p><b>Função:</b> O cérebro por trás da operação de roubo da Casa da Moeda da Espanha.</p>
+
+				<p><b>Descrição:</b> Um homem que ninguém associaria a nenhum plano criminoso. Persuasivo, de boa aparência e fala, é um autodidata. Dono de uma inteligência superior, planejou durante anos cada detalhe da operação. Ele parece saber tudo e antecipar tudo de dentro do seu posto de observação no exterior da Fábrica.</p>
+
+				<p><b>Passado:</b> Foi uma criança doente que passou toda a sua infância em uma cama de hospital, lendo e ouvindo histórias sobre roubos que seu pai lhe contou. Ele achava que todas aquelas histórias eram filmes, até que seu pai foi morto a tiros na porta do Banco Hispano-Americano. Foi aí que percebeu que aquelas histórias contadas por seu pai eram realmente roubos que ele cometia. O plano para roubar a Casa da Moeda Nacional e a Fábrica de Selos era de seu pai.</p>
+
+				<p><b>Relacionamentos:</b> Se envolve com a delegada Raquel Murillo, sendo essa a única falha não prevista no seu plano. A série mostra que ele tem um relacionamento prévio Berlim, ainda que os outros assaltantes não saibam disso, mas a natureza desse relacionamento não foi revelada até o final da 1ª temporada.</p>
+
+				<h2>TOKIO</h2>
+				<img src="img/t.jpg"/>
+				<p class="d">===</p>
+		    	<p><b>Nome real:</b> Silene Oliveira</p>
+
+				<p><b>Função:</b> Atiradora com experiência em assaltos a bancos.</p>
+
+				<p><b>Descrição:</b> Dura, impulsiva e com uma aparente falta de empatia (embora isso seja apenas uma pose), ela é uma sobrevivente. Não tem nada a perder com este assalto porque não tem nada no mundo lá fora. Está sendo procurada pela polícia por diferentes assaltos. </p>
+
+				<p><b>Passado:</b> Ela entrou no mundo do crime com 14 anos seguindo os passos de seu namorado, de 28. Desde então, alternou períodos de normalidade, tendo um emprego convencional, com outros ligados a todos os tipos de roubos, cada vez mais audaciosos. Em um deles, foi envolvida em um tiroteio que resultou em três mortes, uma delas do namorado dela. Ele está em busca e captura desde então. </p>
+
+				<p><b>Relacionamentos:</b> Começou um relacionamento com Rio depois de se conhecerem na fazenda em Toledo, quebrando a terceira regra do professor: não há relações pessoais. Rio é sua fraqueza desde o primeiro momento, mesmo sendo quinze anos mais velha que ele. Na noite anterior ao assalto, ele a pede em casamento, mas ele não aceita sua proposta de casamento de imediato. Também quase se envolveu com Denver e desenvolve uma amizade com Nairobi. </p>
+
+				<h3>RIO</h3>
+				<img src="img/r.jpg"/>
+				<p class="d">===</p>
+		    	<p><b>Nome real:</b> Aníbal Cortés</p>
+
+				<p><b>Função:</b> Hacker </p>
+
+				<p><b>Descrição:</b> Jovem, inteligente e sonhador. Muito imaturo, ele é o mais emocionalmente fraco do grupo e o que tem mais a perder, já que sua família ainda está por aí. Apesar de tudo, ele quer provar a todos com este roubo que nada lhe escapa. </p>
+
+				<p><b>Passado:</b> Programa computadores desde os seis anos de idade. Na verdade, foi isso que o levou a ser um alvo da Interpol. Graças ao Professor, escapou de ser preso. </p>
+
+				<p><b>Relacionamentos:</b> A única relação que é conhecida é a que ele tem com Tokio. Eles se conheceram na fazenda de Toledo e descumpriram a terceira regra do professor: nenhum relacionamento pessoal. Ao longo da série, eles têm dificuldades em seu relacionamento, muitas vezes causados ​​por ciúmes. O relacionamento dos dois complica o plano em mais de uma ocasião. Rio está muito apaixonada por ela, tanto que até pede casamento no dia anterior ao assalto, ao qual ela aceita dias depois. </p>
+
+				<h2>BERLIN</h2>
+				<img src="img/b.jpg"/>
+				<p class="d">===</p>
+		    	<p><b>Nome real:</b> Andrés de Fonollosa</p>
+
+				<p><b>Função:</b> Líder</p>
+
+				<p><b>Descrição:</b> É um narcisista, egocêntrico e com delírios de grandeza. Pode-se dizer, também, que é bastante machista, pois trata as mulheres como um objeto sexual e afirma (indiretamente) várias vezes que elas só servem para fazer sexo. Tem boas maneiras e absoluta falta de empatia. Ele acredita ser superior ao resto do grupo, com tendência à megalomania e à necessidade de causar boa impressão em estranhos. Apesar de tudo, tem um grande senso de honra e nunca trairia um parceiro. </p>
+
+				<p><b>Passado:</b> ENão há registros oficiais e seu passaporte é falso. Ele sofre de uma doença degenerativa nos ossos que o obriga a injetar um medicamento a cada poucas horas. </p>
+
+				<p><b>Relacionamentos:</b> Quase nada se sabe sobre ele além de que, ao contrário dos outros, já tinha um relacionamento prévio com o Professor. O resto dos membros do grupo no geral o desprezam. </p>
+		  	</div>
+		</div>
 	</div>
-</center>
-
-<p class="d"> === </p>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
-    	<h1>HISTÓRIA</h1>
-			<b>La Casa de Papel</b> é uma série de televisão espanhola do gênero de filmes de assalto. Criada por Álex Pina para a rede televisiva espanhola Antena 3, a série estreou em 2 de maio de 2017 estrelando Úrsula Corberó (Tókyo), Alba Flores (Nairóbi), Álvaro Morte (El Profesor), Itziar Ituño (Raquel Murillo), Pedro Alonso (Berlin), Paco Tous (Moscou), Jaime Lorente (Denver), Miguel Herrán (Rio), Darko Peric (Helsinque) e Roberto García (Oslo). A série foi adicionada internacionalmente no catálogo da Netflix no dia 25 de dezembro de 2017 com uma nova edição e diferente quantidade de episódios.
-
-    		Um homem misterioso que atende pelo nome de El Profesor ("Professor"), está planejando o maior assalto do século. A fim de realizar o ambicioso plano ele recruta oito pessoas com certas habilidades e que não têm nada a perder. O objetivo é se infiltrar na Casa da Moeda, de modo que eles possam imprimir 2,4 bilhões de euros. Para fazer isso eles precisam de onze dias de reclusão, durante os quais vão ter que lidar com sessenta e sete reféns e as forças da Polícia de elite, com cenas de muita ação e planos brilhantes de El Profesor, que acaba se apaixonando pela policial que está encarregada no caso do assalto a casa da moeda.
-    </div>
-    <p class="d"> === </p>
-    <div class="col-sm">
-    	<h1>PERSONAGENS</h1>
-    	<h3>PROFESSOR</h3>
-    	<b>Nome real:</b> Sergio Marquina
-
-		<p><b>Função:</b> O cérebro por trás da operação de roubo da Casa da Moeda da Espanha.</p>
-
-		<p><b>Descrição:</b> Um homem que ninguém associaria a nenhum plano criminoso. Persuasivo, de boa aparência e fala, é um autodidata. Dono de uma inteligência superior, planejou durante anos cada detalhe da operação. Ele parece saber tudo e antecipar tudo de dentro do seu posto de observação no exterior da Fábrica.</p>
-
-		<p><b>Passado:</b> Foi uma criança doente que passou toda a sua infância em uma cama de hospital, lendo e ouvindo histórias sobre roubos que seu pai lhe contou. Ele achava que todas aquelas histórias eram filmes, até que seu pai foi morto a tiros na porta do Banco Hispano-Americano. Foi aí que percebeu que aquelas histórias contadas por seu pai eram realmente roubos que ele cometia. O plano para roubar a Casa da Moeda Nacional e a Fábrica de Selos era de seu pai.</p>
-
-		<p><b>Relacionamentos:</b> Se envolve com a delegada Raquel Murillo, sendo essa a única falha não prevista no seu plano. A série mostra que ele tem um relacionamento prévio Berlim, ainda que os outros assaltantes não saibam disso, mas a natureza desse relacionamento não foi revelada até o final da 1ª temporada.</p>
-
-		<h3>TÓQUIO</h3>
-    	<b>Nome real:</b> Sergio Marquina
-
-		<p><b>Função:</b> Atiradora com experiência em assaltos a bancos.</p>
-
-		<p><b>Descrição:</b> Dura, impulsiva e com uma aparente falta de empatia (embora isso seja apenas uma pose), ela é uma sobrevivente. Não tem nada a perder com este assalto porque não tem nada no mundo lá fora. Está sendo procurada pela polícia por diferentes assaltos. </p>
-
-		<p><b>Passado:</b> Ela entrou no mundo do crime com 14 anos seguindo os passos de seu namorado, de 28. Desde então, alternou períodos de normalidade, tendo um emprego convencional, com outros ligados a todos os tipos de roubos, cada vez mais audaciosos. Em um deles, foi envolvida em um tiroteio que resultou em três mortes, uma delas do namorado dela. Ele está em busca e captura desde então. </p>
-
-		<p><b>Relacionamentos:</b> Começou um relacionamento com Rio depois de se conhecerem na fazenda em Toledo, quebrando a terceira regra do professor: não há relações pessoais. Rio é sua fraqueza desde o primeiro momento, mesmo sendo quinze anos mais velha que ele. Na noite anterior ao assalto, ele a pede em casamento, mas ele não aceita sua proposta de casamento de imediato. Também quase se envolveu com Denver e desenvolve uma amizade com Nairobi. </p>
-
-		<h3>RIO</h3>
-    	<b>Nome real:</b> Aníbal Cortés
-
-		<p><b>Função:</b> Hacker </p>
-
-		<p><b>Descrição:</b> Jovem, inteligente e sonhador. Muito imaturo, ele é o mais emocionalmente fraco do grupo e o que tem mais a perder, já que sua família ainda está por aí. Apesar de tudo, ele quer provar a todos com este roubo que nada lhe escapa. </p>
-
-		<p><b>Passado:</b> Programa computadores desde os seis anos de idade. Na verdade, foi isso que o levou a ser um alvo da Interpol. Graças ao Professor, escapou de ser preso. </p>
-
-		<p><b>Relacionamentos:</b> A única relação que é conhecida é a que ele tem com Tokio. Eles se conheceram na fazenda de Toledo e descumpriram a terceira regra do professor: nenhum relacionamento pessoal. Ao longo da série, eles têm dificuldades em seu relacionamento, muitas vezes causados ​​por ciúmes. O relacionamento dos dois complica o plano em mais de uma ocasião. Rio está muito apaixonada por ela, tanto que até pede casamento no dia anterior ao assalto, ao qual ela aceita dias depois. </p>
-    </div>
-  </div>
-</div>
-	</center>
-
 </body>
