@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorator="LayoutPadrao">
+
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+		<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+		<script th:src="@{/js/jquery-2.1.4.min.js}"></script>
+		<script th:src="@{/js/bootstrap.min.js}"></script>
+	</head>	
+<body>
+<div class="container">
+
+<nav th:include:"fragmentos/menu :: topo"> </nav>
+
+<h3> Autor </h3>
+
+	
+	  <div class="alert alert-success" th:"${!#strings.isEmpty(mensagem)}">
+  		<span class="alert-heading" th:text="${mensagem}">Warning!</span>
+  	  </div>
+	  
+	 <form class="form-horizontal" method="POST" action="/novo"> 
+	  <fieldset>
+	    <legend>Cadastro de Novo Autor </legend>
+	    <div class="form-group">
+	      <label for="nome">Nome</label>
+	      <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+	    </div>
+	    <div class="form-group">
+	      <label for="Sobrenome">Sobrenome</label>
+	      <input type="text" class="form-control" id="Sobrenome" name="sobrenome" placeholder="Sobrenome">
+	    </div>
+	    <div class="form-group">
+	      <label for="biografia">Biografia</label>
+	      <textarea class="form-control" id="biografia" name="biografia" rows="3"></textarea>
+	    </div>
+	    
+	    
+	    <button type="submit" class="btn btn-primary">Submit</button>
+	  </fieldset>
+</form>
+	
+</div>	
+</body>
+</html>
