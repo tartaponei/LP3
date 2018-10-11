@@ -1,0 +1,11 @@
+C:\Users\alunoct\Documents\Aula1307\Aula1307\bin\Debug\netcoreapp2.0\Aula1307.deps.json
+C:\Users\alunoct\Documents\Aula1307\Aula1307\bin\Debug\netcoreapp2.0\Aula1307.runtimeconfig.json
+C:\Users\alunoct\Documents\Aula1307\Aula1307\bin\Debug\netcoreapp2.0\Aula1307.runtimeconfig.dev.json
+C:\Users\alunoct\Documents\Aula1307\Aula1307\bin\Debug\netcoreapp2.0\Aula1307.dll
+C:\Users\alunoct\Documents\Aula1307\Aula1307\obj\Debug\netcoreapp2.0\Aula1307.csprojAssemblyReference.cache
+C:\Users\alunoct\Documents\Aula1307\Aula1307\obj\Debug\netcoreapp2.0\Aula1307.csproj.CoreCompileInputs.cache
+C:\Users\alunoct\Documents\Aula1307\Aula1307\obj\Debug\netcoreapp2.0\Aula1307.AssemblyInfoInputs.cache
+C:\Users\alunoct\Documents\Aula1307\Aula1307\obj\Debug\netcoreapp2.0\Aula1307.AssemblyInfo.cs
+C:\Users\alunoct\Documents\Aula1307\Aula1307\bin\Debug\netcoreapp2.0\Aula1307.pdb
+C:\Users\alunoct\Documents\Aula1307\Aula1307\obj\Debug\netcoreapp2.0\Aula1307.dll
+C:\Users\alunoct\Documents\Aula1307\Aula1307\obj\Debug\netcoreapp2.0\Aula1307.pdb
