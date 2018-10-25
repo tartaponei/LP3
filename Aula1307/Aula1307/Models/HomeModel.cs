@@ -12,17 +12,20 @@ namespace Aula1307.Models
         
         public List<HomeModel> listarNomes()
         {
-            HomeModel item = new HomeModel();
+            HomeModel item;
             List<HomeModel> lista = new List<HomeModel>();
 
+            item = new HomeModel();
             item.Id = 1;
             item.Nome = "Mika";
             lista.Add(item);
 
+            item = new HomeModel();
             item.Id = 2;
             item.Nome = "Sarah";
             lista.Add(item);
 
+            item = new HomeModel();
             item.Id = 3;
             item.Nome = "Carol";
             lista.Add(item);
